@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Fira Code', monospace;
+  &:focus,
+  &:active{
+    outline: none;
+  }
+  &::-webkit-scrollbar {
+    width: 20px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #607B96;
+    border: 4px solid #011627;
+    background-clip: padding-box;
+    background-color: #607B96;
+    border-radius: 8px;
+    cursor: pointer;
+  } 
+  &::-webkit-scrollbar-track {
+    background: #011627;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+}
+
+body{
+  background-color: #011627;
+  min-height: 100vh;
+  color: #607B96;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+h1{
+  color: #fff;
+  padding: 20px 0; 
+}
+
+.wrapper{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  .main{
+    transition: 300ms ease-out;
+    flex: 1 1 auto;
+    border-left: 1px solid #1E2D3D;
+    border-right: 1px solid #1E2D3D;
+  }
+}
+
+.inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar{
+  width: 310px;
+  border-right: 1px solid #1E2D3D;
+  @media (max-width: 992px){
+    display: none;
+  }
+}
+
+.content{
+  flex: 1 1 auto;
+  width: calc(100% - 310px);
+}
+
+.subheader{
+  border-bottom: 1px solid #1E2D3D;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  &__item{
+    border-right: 1px solid #1E2D3D;
+    min-width: 167px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+    padding: 10px 11px 10px 14px; 
+    cursor: pointer;
+    transition: 300ms ease-out;
+    &:hover{
+      color: #fff;
+      svg path{
+        fill: #fff;
+      }
+    }
+    button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      svg{
+        path{
+          transition: 300ms ease-out;
+          fill: #607B96;
+        }
+      }
+    }
+  }
+}
+.keyword,
+.operator
+{
+  color: #C98BDF;
+}
+.punctuation{
+  color: #607B96;
+}
+.string{
+  color: #FEA55F;
+}
+.property{
+  color: #43D9AD;
+}
+.function{
+  color: #43D9AD;
+}
+.constant{
+  color: #43D9AD;
+}
+.link{
+  position: relative;
+  &:hover{
+    &::before{
+      opacity: 1;
+    }
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    width: calc(100% - 20px);
+    opacity: 0.8;
+    height: 1px;
+    background: #E99287;
+  }
+}
+.variable{
+  color: #43D9AD;
+}
+pre{
+  color: #5565E8;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+button{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.food{
+  background: #43D9AD;
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50%;
+  position: relative;
+  opacity: 1;
+  transition: 300ms ease-out;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #43D9AD;
+    opacity: 0.2;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #43D9AD;
+    opacity: 0.1;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+}
+
+.snake{
+  background: #43D9AD;
+  width: 8px !important;
+  height: 8px !important;
+  position: relative;
+  opacity: 1;
+}
+
+.mobile{
+  display: none;
+}
+
+// @media (max-width: 1400px){
+//   body *:not(#__next){
+//     display: none;
+//   }
+//   .mobile{
+//     display: flex !important;
+//     width: 100%;
+//     height: 100vh;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 15px;
+//     *{
+//       display: block !important;
+//       text-align: center;
+//     }
+//   }
+// }
