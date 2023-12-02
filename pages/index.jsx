@@ -257,7 +257,7 @@ export default function Home() {
             </a>
           </motion.div>
           <motion.div className={styles.game}
-            initial={{ opacity: 0 }} animate={{
+            initial={{ opacity: 0 }} animate={{ 
               opacity: 1,
               transition: {
                 duration: 1,
