@@ -25,7 +25,6 @@ export default function Document() {
             `,
           }}
         />
-        <noscript><div></div></noscript>
       </body>
     </Html>
   );
