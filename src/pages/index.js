@@ -50,10 +50,10 @@ export default function Home() {
                 <div className="item__content">
                   <p className="item__title">Instagram
                     <svg data-v-57157ab8="" width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="verify"><g><g data-name="Layer 2"><path fill="#2196f3" d="M20.8 8.838a1.445 1.445 0 0 1-.419-1.012V6.548a2.934 2.934 0 0 0-2.931-2.93h-1.276a1.425 1.425 0 0 1-1.012-.418l-1.09-1.091a2.934 2.934 0 0 0-4.144 0L8.838 3.2a1.425 1.425 0 0 1-1.012.419H6.549a2.934 2.934 0 0 0-2.931 2.93v1.277A1.441 1.441 0 0 1 3.2 8.837L2.108 9.928a2.934 2.934 0 0 0 0 4.144l1.092 1.09a1.445 1.445 0 0 1 .419 1.012v1.278a2.934 2.934 0 0 0 2.931 2.93h1.276a1.425 1.425 0 0 1 1.012.419l1.09 1.091a2.933 2.933 0 0 0 4.144 0l1.09-1.091a1.425 1.425 0 0 1 1.012-.419h1.277a2.934 2.934 0 0 0 2.931-2.93v-1.278a1.437 1.437 0 0 1 .419-1.011l1.091-1.091a2.934 2.934 0 0 0 0-4.144z" data-original="#2196f3" opacity="1"></path><circle cx="12" cy="12" r="6.75" fill="#29b3ff" data-original="#29b3ff" opacity="1"></circle><path fill="#ffffff" d="M11 14.75a.744.744 0 0 1-.53-.22l-2-2a.75.75 0 0 1 1.06-1.06L11 12.939l3.47-3.469a.75.75 0 0 1 1.06 1.06l-4 4a.744.744 0 0 1-.53.22z" data-original="#ffffff"></path></g></g></svg>
-                  </p> 
+                  </p>    
                   <p className="item__desc">instagram.com/shahriyorweb</p>
-                </div>
-              </Link>
+                </div>  
+              </Link> 
             </div>
           </div>
         </div>
