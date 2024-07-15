@@ -26,8 +26,8 @@ export default function Home() {
             <h1 className="title">Шахриер Шарифжонов</h1>
             <p className="desc">Предприниматель • Разработка сайтов</p>
             <div className="switcher">
-              <button type="button" className={`switcher__button ${page === 1 ? 'active' : ''}`} onClick={() => {setPage(1)}}>Соц.сети</button>
-              <button type="button" className={`switcher__button ${page === 2 ? 'active' : ''}`} onClick={() => {setPage(2)}}>Различное</button>
+              {/* <button type="button" className={`switcher__button ${page === 1 ? 'active' : ''}`} onClick={() => {setPage(1)}}>Соц.сети</button>
+              <button type="button" className={`switcher__button ${page === 2 ? 'active' : ''}`} onClick={() => {setPage(2)}}>Различное</button> */}
             </div>
             <div className={`items ${page === 1 ? 'active' : ''}`}>
               <Link href="https://t.me/shahriyorweb" target="_blank" className="item">
