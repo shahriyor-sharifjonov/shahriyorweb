@@ -25,7 +25,7 @@ export default function Document() {
             `,
           }}
         />
-        <noscript><div><img src="https://mc.yandex.ru/watch/90159099" alt="" /></div></noscript>
+        <noscript><div></div></noscript>
       </body>
     </Html>
   );
