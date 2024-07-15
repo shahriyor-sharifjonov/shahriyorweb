@@ -54,7 +54,7 @@ export default function Home() {
                   <p className="item__desc">instagram.com/shahriyorweb</p>
                 </div>  
               </Link> 
-              <Link href="https://instagram.com/shahriyorweb" target="_blank" className="item">
+              <Link href="https://instagram.com/eightdigital.uz" target="_blank" className="item">
                 <div className="item__icon full">
                   <div className="item__icon-bg" style={{background: "rgb(0, 0, 0)"}}></div>
                   <Image src="/eight.svg" alt="eight" draggable={false} width={18} height={18} />
