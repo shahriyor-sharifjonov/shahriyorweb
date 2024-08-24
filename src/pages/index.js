@@ -1,10 +1,33 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 
 export default function Home() {
   const [page, setPage] = useState(1)
+
+  useEffect(() => {
+    const handleScriptLoad = () => {
+      if (window.Telegram?.WebApp) {
+        setHaveWebApp(true);
+        const tg = window.Telegram?.WebApp;
+
+        tg.expand();
+      }
+    };
+
+    // Check if the script has already been loaded
+    if (window.Telegram?.WebApp) {
+      handleScriptLoad();
+    } else {
+      // Listen for the script to load
+      document.addEventListener('TelegramWebAppScriptLoaded', handleScriptLoad);
+
+      return () => {
+        document.removeEventListener('TelegramWebAppScriptLoaded', handleScriptLoad);
+      };
+    }
+  }, []);
 
   return (
     <>
